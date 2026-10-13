@@ -3,25 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxime Baudoux - Portfolio Développeur Front-End</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0f172a; color: #f8fafc; line-height: 1.6; }
-        header { background: #1e293b; padding: 2rem; text-align: center; border-bottom: 1px solid #334155; }
-        section { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-        h1 { color: #38bdf8; }
-        .card { background: #1e293b; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; border: 1px solid #334155; }
-    </style>
+    <title>Maxime Baudoux | Développeur Web & Lua</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Maxime Baudoux</h1>
-        <p>Étudiant en Développement Front-End à l'IFAPME</p>
+
+    <!-- Arrière-plan motifs décoratifs animés -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Navigation Flat Design -->
+    <nav class="navbar">
+        <div class="logo">Maxime<span>.dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#cv">Mon CV</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Portfolio Pro</span>
+            <h1>Bonjour, je suis <span>Maxime Baudoux</span></h1>
+            <h2>Développeur Front-End & Scripting Lua / GLua</h2>
+            <p>Étudiant à l'IFAPME, passionné par le développement d'interfaces modernes, le web interactif et la création de scripts Lua/GLua pour Garry's Mod.</p>
+            <div class="hero-buttons">
+                <a href="#cv" class="btn btn-yellow">Voir mon CV</a>
+                <a href="#contact" class="btn btn-blue">Me contacter</a>
+            </div>
+        </div>
     </header>
-    <section>
-        <h2>À propos de moi</h2>
-        <div class="card">
-            <p>Bienvenue sur mon nouveau portfolio professionnel ! Je me passionne pour le développement web, l'intégration front-end et la création d'expériences web modernes.</p>
+
+    <!-- À propos -->
+    <section id="about" class="section">
+        <div class="section-title">
+            <h2>À Propos de Moi</h2>
+        </div>
+        <div class="card card-purple">
+            <p>Passionné par l'informatique et le développement web, je me spécialise dans la création d'interfaces utilisateur modernes et réactives. Mon intérêt pour le code s'étend également au développement de gamemodes et d'addons personnalisés en <strong>Lua / GLua (Garry's Mod)</strong>, combinant logique algorithmique et design d'interface.</p>
         </div>
     </section>
+
+    <!-- Compétences -->
+    <section id="skills" class="section">
+        <div class="section-title">
+            <h2>Mes Compétences</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card card-orange">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5 & CSS3</h3>
+                <p>Structures sémantiques, layouts modernes (Flexbox, Grid) et animations CSS.</p>
+            </div>
+            <div class="skill-card card-yellow">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Dynamisme côté client, manipulation du DOM et requêtes interactives.</p>
+            </div>
+            <div class="skill-card card-blue">
+                <i class="fa-code fa-solid"></i>
+                <h3>Lua / GLua (GMod)</h3>
+                <p>Développement de scripts serveur/client, interfaces VGUI, addons et gamemodes pour Garry's Mod.</p>
+            </div>
+            <div class="skill-card card-green">
+                <i class="fa-brands fa-php"></i>
+                <h3>PHP & MySQL / SQL</h3>
+                <p>Gestion de bases de données, requêtes SQL et logique serveur.</p>
+            </div>
+            <div class="skill-card card-pink">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git & GitHub</h3>
+                <p>Gestion de version, suivi de code et déploiement avec GitHub Pages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv" class="section">
+        <div class="section-title">
+            <h2>Mon Curriculum Vitae</h2>
+        </div>
+        <div class="cv-wrapper">
+            <div class="cv-sidebar card-blue">
+                <div class="cv-profile">
+                    <i class="fa-solid fa-user-gear profile-icon"></i>
+                    <h3>Maxime Baudoux</h3>
+                    <p class="cv-tag">Développeur Web Front-End</p>
+                </div>
+                <div class="cv-info">
+                    <p><i class="fa-solid fa-location-dot"></i> Seneffe / Arquennes, Belgique</p>
+                    <p><i class="fa-solid fa-envelope"></i> maxime.baudoux66@gmail.com</p>
+                    <p><i class="fa-solid fa-graduation-cap"></i> Apprenant IFAPME</p>
+                </div>
+                <div class="cv-languages">
+                    <h4>Langues</h4>
+                    <ul>
+                        <li>Français : Langue maternelle</li>
+                        <li>Néerlandais : Notions de base</li>
+                        <li>Anglais : Notions de base</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-main">
+                <div class="cv-block card-purple">
+                    <div class="cv-header-title">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <h3>Formation & Études</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">En cours</span>
+                        <h4>Formation Développeur Web Front-End</h4>
+                        <p class="institution">IFAPME</p>
+                        <p>Apprentissage des technologies web modernes (HTML, CSS, JavaScript, PHP, MySQL, Git).</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2019 - 2025</span>
+                        <h4>Études Secondaires</h4>
+                        <p class="institution">LPST - L'École du Futur (Soignies)</p>
+                    </div>
+                </div>
+
+                <div class="cv-block card-green">
+                    <div class="cv-header-title">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>Expériences & Projets</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">Projets Personnels</span>
+                        <h4>Développement Lua / GLua</h4>
+                        <p>Création d'addons Roleplay, interfaces utilisateur VGUI et scripts d'administration pour Garry's Mod.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2024</span>
+                        <h4>Stages d'Animateur / Éducateur</h4>
+                        <p>Développement du sens des responsabilités, de l'organisation et du travail en équipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects" class="section">
+        <div class="section-title">
+            <h2>Mes Projets</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card card-yellow">
+                <i class="fa-solid fa-globe project-icon"></i>
+                <h3>Portfolio IFAPME</h3>
+                <p>Site vitrine coloré et responsive hébergé gratuitement sur GitHub Pages.</p>
+                <div class="tags">
+                    <span>HTML</span><span>CSS</span><span>Git</span>
+                </div>
+            </div>
+            <div class="project-card card-pink">
+                <i class="fa-solid fa-gamepad project-icon"></i>
+                <h3>Scripts GLua & Addons GMod</h3>
+                <p>Configuration de serveurs, scripts Lua personnalisés et interfaces de jeu.</p>
+                <div class="tags">
+                    <span>Lua</span><span>GLua</span><span>VGUI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-title">
+            <h2>Me Contacter</h2>
+        </div>
+        <div class="card card-orange text-center">
+            <p>Une question ou une opportunité de stage ? Contacte-moi directement !</p>
+            <div class="contact-links">
+                <a href="mailto:maxime.baudoux66@gmail.com" class="btn btn-yellow"><i class="fa-solid fa-envelope"></i> Envoyer un e-mail</a>
+                <a href="https://github.com/Dustt66" target="_blank" class="btn btn-purple"><i class="fa-brands fa-github"></i> Mon GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Maxime Baudoux - Développeur Web & Lua</p>
+    </footer>
+
 </body>
 </html>
