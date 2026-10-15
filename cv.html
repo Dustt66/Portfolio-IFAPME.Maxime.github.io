@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; font-src https://cdnjs.cloudflare.com; img-src 'self' data:; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="CV de Maxime Baudoux - Étudiant Développeur Web à l'IFAPME.">
+    <title>Maxime Baudoux | Mon CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
+
+    <div class="bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Maxime<span>.dev</span></a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html" class="active" aria-current="page">Mon CV</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenu">
+        <section class="section">
+            <div class="section-title">
+                <h2>Mon Curriculum Vitae</h2>
+            </div>
+            <div class="cv-wrapper">
+
+                <aside class="cv-sidebar card-blue">
+                    <div class="cv-profile">
+                        <i class="fa-solid fa-user-gear profile-icon" aria-hidden="true"></i>
+                        <h3>Maxime Baudoux</h3>
+                        <p class="cv-tag">Développeur Web Front-End</p>
+                    </div>
+                    <div class="cv-info">
+                        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Seneffe / Arquennes, Belgique</p>
+                        <p>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <a href="contact.html" class="js-mail" data-user="maxime.baudoux66" data-domain="gmail.com"><span class="mail-text">Voir la page Contact</span></a>
+                        </p>
+                        <p><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Apprenant IFAPME</p>
+                    </div>
+                    <div class="cv-languages">
+                        <h4>Langues</h4>
+                        <ul>
+                            <li>Français : Langue maternelle</li>
+                            <li>Néerlandais : Notions de base</li>
+                            <li>Anglais : Notions de base</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="cv-main">
+                    <div class="cv-block card-purple">
+                        <div class="cv-header-title">
+                            <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+                            <h3>Formation &amp; Études</h3>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">En cours</span>
+                            <h4>Formation Développeur Web Front-End</h4>
+                            <p class="institution">IFAPME</p>
+                            <p>Apprentissage des technologies web modernes (HTML, CSS, JavaScript, PHP, MySQL, Git).</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2019 - 2025</span>
+                            <h4>Études Secondaires</h4>
+                            <p class="institution">LPST - L'École du Futur (Soignies)</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-block card-green">
+                        <div class="cv-header-title">
+                            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                            <h3>Expériences &amp; Projets</h3>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">Projets Personnels</span>
+                            <h4>Développement Lua / GLua</h4>
+                            <p>Création d'addons Roleplay, interfaces utilisateur VGUI et scripts d'administration pour Garry's Mod.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2024</span>
+                            <h4>Stages d'Animateur / Éducateur</h4>
+                            <p>Développement du sens des responsabilités, de l'organisation et du travail en équipe.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="js-year">2026</span> Maxime Baudoux - Développeur Web &amp; Lua</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
